@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.intro {
+    width: fit-content;
+    position: relative;
+    animation-name: flyingtext;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    
+}
+
+.img {
+    /* background-color: white; */
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: freespirit;
+    animation-duration: 9s;
+    animation-delay: 7s;
+}
+.animated-text {
+    text-align: left;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    line-height: 4rem;
+    padding-left: 3rem;
+   
+
+
+}
+@keyframes flyingtext {
+    from {
+        right: -50%;
+    }
+    to {
+        right: 0%;
+    }
+}
+.animated-roles {
+    background-color: rgba(220, 220, 220, 0.137);
+    padding: 0 10px;
+    border-bottom: 2px solid brown;
+    border-radius: 10px;
+}
+.animated-img {
+    height: 150px;
+    
+}
+
+@keyframes freespirit {
+    from {
+        bottom: -50%;
+    }
+    to {
+        top: 0;
+    }
+}
